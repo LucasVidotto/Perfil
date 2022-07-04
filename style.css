@@ -1,0 +1,163 @@
+* {}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 432px;
+    height: 376px;
+    /* background: rgb(100, 100, 100); */
+    border-radius: 3rem;
+    background: rgb(23, 68, 16);
+    background: linear-gradient(130deg, rgb(82, 12, 114) 22%, rgb(6, 13, 77) 100%);
+
+    -webkit-box-shadow: 18px 11px 12px 3px rgba(252, 250, 250, 0.93);
+    box-shadow: 18px 11px 12px 3px rgba(252, 250, 250, 0.93);
+}
+
+.point-image {
+    margin-top: 1.5rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 8.6rem;
+    height: 8.6rem;
+    border-radius: 50%;
+    background: url('./img/WhatsApp\ Image\ 2022-01-11\ at\ 18.21.04.jpeg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.point-image:hover {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.point-description {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 22rem;
+    height: 12rem;
+    border-radius: 10%;
+
+    position: right;
+
+    background: rgba(236, 9, 38, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(19.5px);
+    -webkit-backdrop-filter: blur(19.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+p {
+    font-size: 1.05rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: -5px 5px 4px rgba(0, 0, 0, 0.87);
+    color: lime;
+}
+
+p::after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca 1.5s infinite;
+}
+
+#two {
+    animation-delay: 6s;
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 100px;
+    /* background: rgb(100, 100, 100); */
+    border-radius: 3rem;
+    background: rgb(23, 68, 16);
+    background: linear-gradient(130deg, rgb(82, 12, 114) 22%, rgb(6, 13, 77) 100%);
+
+    /* -webkit-box-shadow: 18px 11px 12px 3px rgba(252, 250, 250, 0.93);
+    box-shadow: 18px 11px 12px 3px rgba(252, 250, 250, 0.93); */
+}
+
+.icons {
+    display: flex;
+    column-gap: 50px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #Fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover {
+    outline-offset: 5px;
+    /* espande a borda*/
+}
+
+.icon:hover i {
+    animation: shake .25s;
+}
+
+.icon--insta {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,
+            #fd5849a6 45%, #d6249eab 60%, #2859eb93 90%);
+    outline-color: #a02d76;
+}
+
+.icon--face {
+    background-color: #0c1ba7;
+    outline-color: #3c459e;
+}
+
+.icon--in {
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+.icon--git {
+    background-color: #0f1b13;
+    outline-color: #2ea44f;
+}
