@@ -253,6 +253,10 @@ p::after {
   background-color: #0c1ba7;
   outline-color: #1c459e;
 }
+.icon--linkedin {
+  background-color: #0c1ba7;
+  outline-color: #fffaf0;
+}
 
 .icon--in {
   background-color: #0077b5;
@@ -282,6 +286,9 @@ p::after {
   text-align: center;
   color: #fff;
   width: 100%;
+}
+.s-bottom {
+  margin-top: 7rem;
 }
 
 div.section span {
